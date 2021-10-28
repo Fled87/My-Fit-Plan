@@ -1,0 +1,262 @@
+/*Celular*/
+
+@media screen and (max-width: 576px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .menu__item{
+            font-size: 1rem;
+            display: block;
+        }
+    }
+    .header{
+        &__titulo{
+            font-size: 1.2rem;
+        }
+        &__parrafo{
+            font-size: 1rem;
+        }
+    }
+
+    .main{
+        overflow: none;
+        &__titulo{
+            font-size: 1.5rem;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        &__grilla{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                "parrafo"
+                "mapa";
+            gap: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__parrafo{
+            font-size: 1rem;
+            margin: 10px;
+            padding: 10px;
+            grid-area: parrafo;
+            width: 95%;
+        }
+        &__mapa{
+            grid-area: mapa;
+            width: 95%;
+        }
+        &__flex{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &__tabla{
+            font-size: 1rem;
+            font-weight: strong;
+        }
+        &__div{
+            width: 95%;
+        }
+        &__parrafo_entreno{
+            font-size: 1rem;
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &__subtitulo{
+            font-size: 1.2rem;
+        }
+        &__subparrafo{
+            font-size: 1rem;
+        }
+        #main__caja{
+            width: 95%;
+            height: auto;
+        }
+        
+    }
+    .footer{
+        &__titulo{
+            font-size: 2rem;
+        }
+        &__contacto{
+            font-size: 1.2rem;
+        
+        }
+        &__redes{
+            display: none;
+        }
+    }    
+}
+
+/*Tablet*/ 
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .menu__item{
+            font-size: 1.7rem;
+            display: inline-block;
+        }
+    }
+    .header{
+        &__titulo{
+            font-size: 1.2rem;
+        }
+        &__parrafo{
+            font-size: 1rem;
+        }
+    }
+    .main{
+        overflow: none;
+        &__titulo{
+            font-size: 2rem;
+            margin: 10px auto;
+            padding: 10px;
+        }
+        &__grilla{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                "parrafo"
+                "mapa";
+            gap: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        &__parrafo{
+            font-size: 1.5rem;
+            margin: 10px;
+            padding: 10px;
+            grid-area: parrafo;
+            width: 95%;
+        }
+        &__mapa{
+            grid-area: mapa;
+            width: 95%;
+        }
+        &__flex{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &__tabla{
+            font-size: 1rem;
+            font-weight: strong;
+        }
+        &__div{
+            width: 95%;
+        }
+        &__parrafo_entreno{
+            font-size: 1.2rem;
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &__subtitulo{
+            font-size: 1.5rem;
+        }
+        &__subparrafo{
+            font-size: 1.2rem;
+        }
+        #main__caja{
+            width: 95%;
+            height: auto;
+        }
+    }
+    .footer{
+        &__titulo{
+            font-size: 2rem;
+        }
+        &__contacto{
+            font-size: 1.2rem;
+        
+        }
+        &__redes{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: nowrap;
+            position: relative;
+            bottom: 60px;
+            margin-right: 10px;
+        }
+        
+    }    
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .menu__item{
+            font-size: 1.7rem;
+            display: inline-block;
+        }
+    }
+    .header{
+        &__titulo{
+            font-size: 1.2rem;
+        }
+        &__parrafo{
+            font-size: 1rem;
+        }
+    }
+    .main{
+        &__parrafo{
+            font-size: 1.2rem;
+            margin: 10px;
+            padding: 10px;
+            grid-area: parrafo;
+        }
+        &__flex{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        &__tabla{
+            font-size: 1rem;
+            font-weight: strong;
+        }
+        &__div{
+            width: 95%;
+        }
+        &__parrafo_entreno{
+            font-size: 1.4rem;
+        }
+        &__contenedor{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        &__subtitulo{
+            font-size: 1.5rem;
+        }
+        &__subparrafo{
+            font-size: 1.2rem;
+        }
+        #main__caja{
+            width: 95%;
+            height: auto;
+        }
+    }
+}

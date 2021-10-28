@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variable*/
+
+@import "variables";
+
+@mixin imagenHeroe{
+        width: 90%;
+        display: block;
+        margin: auto;
+}
+
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: black solid 1px;
+    .menu {
+        
+        &__item{
+            list-style: none;
+            list-style-type: none;
+            padding: 10px;
+            margin-top: 20px;
+            font-family: $roboto;
+            font-size: 1.8rem;
+            font-style: italic;
+            display: inline-block;
+            .submenu {
+                position: absolute;
+                display: none;
+                &__item {
+                    display: block;
+                }
+            }
+            
+        }
+        
+    }
+    
+}
+
+.hoverMenu:hover .submenu{
+    display: block;
+}
+
+.heroe{
+    @include imagenHeroe();
+}
+
+.main{
+    &__titulo{
+        font-size: 3rem;
+        font-family: $roboto;
+        color: black;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    &__grilla{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "parrafo mapa";
+        gap: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &__parrafo{
+        font-size: 1.4rem;
+        font-style: italic;
+        font-weight: strong;
+        text-align: justify;
+        color: black;
+        margin: 10px;
+        padding: 10px;
+        font-family:$roboto;
+        grid-area: parrafo;
+    }
+    &__mapa{
+        grid-area: mapa;
+        margin: auto;
+    }
+}
+
+.footer{
+    background: linear-gradient(-45deg, rgb(187, 185, 186) 0%, rgb(13, 13, 14) 100%);
+    bottom: 0;
+    height: 220px;
+    &__titulo{
+        font-size: 2rem;
+        font-family: $roboto;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+    &__contacto{
+        list-style-type: circle;
+    color: white;
+    font-family: $roboto;
+    font-size: 1rem;
+    font-style: italic;
+    margin-left: 20px;
+    padding-top: 5px;
+    }
+    &__redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        position: relative;
+        bottom: 60px;
+        margin-right: 10px;
+    }
+}
+
+.linkColor {
+    color: black;
+    &:hover{
+        background-color: grey;
+    }
+    &:link{
+        text-decoration: none;
+    }
+    &:visited{
+        color: black;
+    }
+}
+
+
+
+/* Importanción de Estilos para Sección "Entreno" */
+
+@import "entrenos";
+
+/* Importación estilos para sección Actividades */
+
+@import "actividades";
+
+/*Responsive General*/
+
+@import "Responsive_General";

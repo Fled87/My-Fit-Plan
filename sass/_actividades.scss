@@ -1,0 +1,71 @@
+.header{
+    &__titulo{
+        font-size: 3rem;
+        font-family: $roboto;
+        color: black;
+        margin: 10px auto;
+        padding: 10px;
+        text-decoration: underline;
+    }
+    &__parrafo{
+        font-size: 1.4rem;
+        font-style: italic;
+        font-weight: strong;
+        text-align: justify;
+        color: black;
+        margin: 10px;
+        padding: 10px;
+        font-family:$roboto;
+    }
+}
+
+.main{
+    &__contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 50px;
+    }
+    &__color{
+        background-color: black;
+    }
+    &__escala:hover{
+        transform:scale(1.1, 1.1)
+    }
+    &__imagen img{
+            width: 100%;
+            height: auto;
+    }
+    &__subtitulo{
+        font-size: 2rem;
+        font-family: $roboto;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+    &__subparrafo{
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: strong;
+        text-align: justify;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+        font-family: $roboto;
+    }
+    #main__caja{
+        border: 0;
+        padding: 0;
+        width: 23vw;
+        height: 25vh;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    @supports(object-fit: cover){
+        .main__imagen img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+}

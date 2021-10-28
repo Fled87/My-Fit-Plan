@@ -1,0 +1,38 @@
+.main{
+    &__flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+    &__tabla{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: justify;
+        text-transform: capitalize;
+        border-color: red;
+        font-family: $roboto;
+            ol{
+            list-style-type: none;
+        }
+    }
+    &__div{
+        height: auto;
+        width: 45%;
+        padding: 10px;
+        margin: 10px;
+        order: -1;
+    }
+    &__parrafo_entreno{
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: strong;
+        text-align: justify;
+        color: black;
+        margin: 10px;
+        padding: 10px;
+        font-family:$roboto;
+        grid-area: parrafo;
+    }
+}
+
