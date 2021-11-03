@@ -7,75 +7,75 @@
     <meta name="description" content="Formulario de contacto con el grupo">
     <meta name="keywords" content="CONTACTO, FIT PLAN, CLASE, CLASE DE PRUEBA">
     <title>My fit Plan-Seccion de Contacto</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="icon" href="img/android-chrome-192x192.png" type="image/ico"/>
 </head>
-<body class="gridIndex">
-    <nav class="hijoNav">
-        <a href="index.html" style="text-decoration: none;">
+<body>
+    <nav class="nav">
+        <a class="linkColor" href="Index.html" style="text-decoration: none;">
             <img src="img/LogoConFondo_transparente.png" alt="Logo empresa" width="350px" height="110px">
         </a>
-        <ul>
-            <li class="ListaMenu">
-                <a href="Contacto.html" style="text-decoration: none;">CONTACTO</a>
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="linkColor" href="clases.html" style="text-decoration: none;">ENTRENOS</a>
             </li>
-            <li class="ListaMenu" >
-                <a href="Nosotros.html" style="text-decoration: none;">NOSOTROS</a>
-            </li>
-            <li class="ListaMenu">
-                <a href="Actividades.html" style="text-decoration: none;">ACTIVIDADES</a>
-                <ul>
-                    <li class="ListaMenu">
-                        <a href="" style="text-decoration: none;">Ciclismo</a>
+            <li class="menu__item hoverMenu">
+                <a class="linkColor" href="Actividades.html" style="text-decoration: none;">ACTIVIDADES</a>
+                <ul class="submenu">
+                    <li class="submenu__item">
+                        <a class="linkColor" href="" style="text-decoration: none;">Ciclismo</a>
                     </li>
-                    <li class="ListaMenu">
-                        <a href="" style="text-decoration: none;">Running</a>
+                    <li class="submenu__item">
+                        <a class="linkColor" href="" style="text-decoration: none;">Running</a>
                     </li>
-                    <li class="ListaMenu">
-                        <a href="" style="text-decoration: none;">Natación</a>
+                    <li class="submenu__item">
+                        <a class="linkColor" href="" style="text-decoration: none;">Natación</a>
                     </li>
                 </ul>
             </li>
-            <li class="ListaMenu">
-                <a href="clases.html" style="text-decoration: none;">ENTRENOS</a>
+            <li class="menu__item" >
+                <a class="linkColor" href="Nosotros.html" style="text-decoration: none;">NOSOTROS</a>
+            </li>
+            <li class="menu__item">
+                <a class="linkColor" href="Contacto.html" style="text-decoration: none;">CONTACTO</a>
             </li>
         </ul>
     </nav>
 <br>
 <br>
 <br>
-<header class="hijoHeader">
-    <h2 class="TitulosSecciones animate__animated animate__fadeInLeft">Mandanos tu Información y recibí tu voucher por una clase Gratis</h2>
+<header class="header">
+    <h2 class="header__titulo">Mandanos tu Información y recibí tu voucher por una clase Gratis</h2>
 </header>
-    <main class="hijoMain">
+    <main class="main">
     <section>
-        <h3 class="TitulosSecciones animate__animated animate__fadeInLeft">Contacto</h3>
-        <form action="envio.php" method="POST" class="FormularioContacto">
+        <h3 class="main__subtitulo_contacto">Contacto</h3>
+        <form action="envio.php" method="POST" class="main__formulario">
         <fieldset>
                 <legend>Info de Contacto</legend>
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" name="nombre" placeholder="Juan" class="input"><br><br>
-                <label for="nombre">Edad</label>
+                <label for="nombre" class="main__etiquetado">Nombre Completo</label>
+                <input type="text" name="nombre" placeholder="Juan"><br><br>
+                <label for="nombre" class="main__etiquetado">Edad</label>
                 <input type="date" name="edad"><br><br>
-                <label for="Masculino">Masculino</label>
+                <label for="Masculino" class="main__etiquetado">Masculino</label>
                 <input type="Checkbox" name="Masculino" value="Masculino">
-                <label for="Femenino">Femenino</label>
+                <label for="Femenino" class="main__etiquetado">Femenino</label>
                 <input type="Checkbox" name="Femenino" value="Femenino">
-                <label for="otro">Ninguno de los dos</label>
-                <input type="text" name="otro" placeholder="otro" class="input"><br><br>
-                <label for="email">Correo Electrónico</label>
+                <label for="otro" class="main__etiquetado">Ninguno de los dos</label>
+                <input type="text" name="otro" placeholder="otro"><br><br>
+                <label for="email" class="main__etiquetado">Correo Electrónico</label>
                 <input type="email" name="email" placeholder="Juan@xxxxx.com" class="input"><br><br>
         </fieldset>
         <fieldset>
             <legend>Enfermedades Preexistentes</legend>
-            <label for="">Si</label>
+            <label for="" class="main__etiquetado">Si</label>
             <input type="radio" name="enfermedades" value="si">
-            <label for="">No</label>
+            <label for="" class="main__etiquetado">No</label>
             <input type="radio" name="enfermedades" value="No"><br><br>
-            <label for="">Cuales?</label>
+            <label for="" class="main__etiquetado">¿Cuales?</label>
             <select name="enfermedades" id="">
             <option></option>
             <option value="HT">Hipertenso</option>
@@ -87,24 +87,27 @@
         <label for="">Dejanos tus Comentarios</label><br><br>
         <textarea name="Comentario" id="" cols="100" rows="10" placeholder="Deja tu comentario" ></textarea>
         <br><br><br>
-        <input type="Reset" value="Cancelar">
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" class="buttons">
+        <input type="Reset" value="Cancelar" class="buttons">
     </form>
     </section>
     </main>
     <br>
     <br>
-    <footer class="hijoFooter">
-        <h3 class="TitulosSecciones2">Contacto</h3>
-        <ul>
-            <li class="ListaContacto">myfitplan@gmail.com</li>
-            <li class="ListaContacto">whats app 1159999999</li>
-            <li class="ListaContacto">Ig @myfitplan</li>
+    <footer class="footer">
+        <h3 class="footer__titulo">Contacto</h3>
+        <ul class="footer__contacto">
+            <li>myfitplan@gmail.com</li>
+            <li>whats app 1159999999</li>
+            <li>Ig @myfitplan</li>
         </ul>
-        <a href="#" class="Redes"><img src="img/Email.png" alt="Correo"></a>
-        <a href="#" class="Redes"><img src="img/Facebook.png" alt="Facebook"></a>
-        <a href="#" class="Redes"><img src="img/Instagram.png" alt="Instagram"></a>
-        <a href="#" class="Redes"><img src="img/Whatsapp.png" alt="Whatsapp"></a>
+        <div class="footer__redes">
+            <a href="#"><img src="img/Email.png" alt="Correo"></a>
+            <a href="#"><img src="img/Facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/Instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="img/Whatsapp.png" alt="Whatsapp"></a>
+        </div>
     </footer>
+
 </body>
 </html>

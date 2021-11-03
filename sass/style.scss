@@ -9,7 +9,8 @@
 @import "variables";
 
 @mixin imagenHeroe{
-        width: 90%;
+        width: 50%;
+        height: 50%;
         display: block;
         margin: auto;
 }
@@ -67,6 +68,7 @@ body{
         font-size: 3rem;
         font-family: $roboto;
         color: black;
+        text-decoration: underline;
         margin: 10px auto;
         padding: 10px;
     }
@@ -151,6 +153,10 @@ body{
 /* Importación estilos para sección Actividades */
 
 @import "actividades";
+
+/* Importación estilos para sección Contacto */
+
+@import "contacto";
 
 /*Responsive General*/
 

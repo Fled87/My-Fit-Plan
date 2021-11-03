@@ -1,0 +1,49 @@
+.header{
+    &__titulo{
+        font-family: $roboto;
+        font-size: 3rem;
+        font-style: italic;
+        text-decoration: underline;
+        margin: 20px;
+        padding: 10px;
+        color: black;
+    }
+}
+
+.main{
+    &__subtitulo_contacto{
+        font-size: 2rem;
+        font-family: $roboto;
+        color: black;
+        margin: 20px;
+        padding: 10px;     
+    }
+    &__formulario{
+        font-size: 1.5rem;
+        text-align: justify;
+        text-transform: capitalize;
+        border-color: black;
+        border-width: 1px;
+        border-spacing: 5px;
+        font-family: $roboto;
+        margin: 20px;
+        padding: 10px;
+    }
+    &__etiquetado{
+        padding: 10px;
+    }
+}
+
+.buttons{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: $roboto;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 150px;
+}
