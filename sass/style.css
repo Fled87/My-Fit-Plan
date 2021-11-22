@@ -110,7 +110,7 @@ body {
   margin: 0;
   margin-top: 30px;
   padding: 0;
-  background-color: black;
+  background: linear-gradient(-45deg, #bbb9ba 0%, #0d0d0e 100%);
   width: auto;
   height: 200px;
   text-align: center;
