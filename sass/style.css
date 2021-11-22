@@ -346,6 +346,7 @@ body {
 }
 
 .main__video {
+  width: 95%;
   margin: auto;
   overflow: hidden;
   padding-bottom: 730px;
