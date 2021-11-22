@@ -83,6 +83,12 @@
         }
         
     }
+
+    .main2{
+        &__prueba{
+            font-size: em;
+        }
+    }
     .footer{
         &__titulo{
             font-size: 2rem;
@@ -226,6 +232,7 @@
             margin: 10px;
             padding: 10px;
             grid-area: parrafo;
+            width: 95%;
         }
         &__flex{
             display: flex;
