@@ -53,6 +53,24 @@
         padding: 10px;
         font-family: $roboto;
     }
+    &__video{
+        margin: auto;
+        overflow: hidden;
+        padding-bottom: 730px;
+        position: relative;
+        height: 0;
+        margin-left: 100px;
+    }
+    &__video iframe{
+        display: inline-block;
+        left: 0;
+        top: 0;
+        height: 90%;
+        width: 90%;
+        position: absolute;
+
+    }
+
     #main__caja{
         border: 0;
         padding: 0;
